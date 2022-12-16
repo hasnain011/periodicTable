@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.scss">
+  
+    <title>Periodic Table</title>
+</head>
+<body>
+    <div id="myModal" class="modal fade-out" >
+        <!-- Modal content -->
+        <div class="modal-content"  id="modal-flip-from-top">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h1 id="head"></h1>
+        </div>
+      </div>
+    <table>
+        <tr width="950">
+            <th width="40"  id="p" class="periodic" >Group <br> Period</th>
+            <th width="40">1</th>
+            <th width="40" >2</th>
+            <td colspan="1"></td>
+            <th width="40" >3</th>
+            <th width="40" >4</th>
+            <th width="40" >5</th>
+            <th width="40" >6</th>
+            <th width="40" >7</th>
+            <th width="40" >8</th>
+            <th width="40" >9</th>
+            <th width="40" >10</th>
+            <th width="40" >11</th>
+            <th width="40" >12</th>
+            <th width="40" >13</th>
+            <th width="40" >14</th>
+            <th width="40" >15</th>
+            <th width="40" >16</th>
+            <th width="40" >17</th>
+            <th width="40" >18</th>
+            
+        </tr>
+        <tr width="950">
+            <th width="40" >1</th>
+            <td width="40" class="elements color1" onclick="openModal(this)">1 <br> H 
+                <span class="tooltiptext">Full Name : Hydrogen <br>  Atomic Number : 1 <br>Atomic Mass = 1.00797</span>
+            </td>
+            <td colspan="17"></td>
+            <td width="40" id="h" class="elements color1" onclick="openModal(this)">2 <br> He
+            <span class="tooltiptext">Full Name : Helium <br>Atomic Number : 2	 <br>Atomic Mass : 	4.00260</span>
+            </td>
+           
+      
+        </tr>
+        <tr width="950">
+            <th width="40" >2</th>
+            <td width="40" class="elements color1" onclick="openModal(this)" >3 <br>Li
+                <span class="tooltiptext">Full Name : Lithium <br>Atomic Number : 3	 <br>Atomic Mass : 6.941</span></td>
+            <td width="40" class="elements color1" onclick="openModal(this)" >4 <br>Be
+                <span class="tooltiptext">Full Name : Beryllium <br>Atomic Number : 4	 <br>Atomic Mass : 9.01218</span></td>
+            <td colspan="11"></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >5 <br>B
+                <span class="tooltiptext">Full Name : Boron <br>Atomic Number : 5	 <br>Atomic Mass : 10.81</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >6 <br>C
+                <span class="tooltiptext">Full Name : Carbon <br>Atomic Number : 6	 <br>Atomic Mass : 12.011</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >7 <br>N
+                <span class="tooltiptext">Full Name : Nitrogen <br>Atomic Number : 7	 <br>Atomic Mass : 14.0067</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >8 <br>O
+                <span class="tooltiptext">Full Name : Oxygen <br>Atomic Number : 8	 <br>Atomic Mass : 15.9994</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >9 <br>F
+                <span class="tooltiptext">Full Name : Fluorine <br>Atomic Number : 9	 <br>Atomic Mass : 18.998403</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >10 <br>Ne
+                <span class="tooltiptext">Full Name : Neon <br>Atomic Number : 10	 <br>Atomic Mass : 20.179</span></td>
+        </tr>
+        <tr width="950">
+            <th width="40" >3</th>
+            <td width="40" class="elements color1" onclick="openModal(this)" >11<br>Na
+                <span class="tooltiptext">Full Name : Sodium <br>Atomic Number : 11	 <br>Atomic Mass : 6.941</span></td>
+            <td width="40" class="elements color1" onclick="openModal(this)" >12<br>Mg
+                <span class="tooltiptext">Full Name : Magnesium <br>Atomic Number : 12	 <br>Atomic Mass : 24.305</span></td>
+            <td colspan="11"></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >13 <br>Al
+                <span class="tooltiptext">Full Name : Aluminum <br>Atomic Number : 13	 <br>Atomic Mass : 26.98154</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >14<br>Si
+                <span class="tooltiptext">Full Name : Silicon <br>Atomic Number : 14	 <br>Atomic Mass : 28.0855</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >15<br>P
+                <span class="tooltiptext">Full Name : Phosphorus <br>Atomic Number : 15	 <br>Atomic Mass : 30.97376</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >16<br>S
+                <span class="tooltiptext">Full Name : Sulfur <br>Atomic Number : 16	 <br>Atomic Mass : 32.06</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >17<br>CI
+                <span class="tooltiptext">Full Name : Chlorine <br>Atomic Number : 17	 <br>Atomic Mass : 35.453</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >18<br>Ar
+            <span class="tooltiptext">Full Name : Argon <br>Atomic Number : 18	 <br>Atomic Mass : 39.948</span></td>
+        </tr>
+        <tr width="950">
+            <th width="40" >4</th>
+            <td width="40" class="elements color1" onclick="openModal(this)" >19<br>K
+            <span class="tooltiptext">Full Name : Potassium <br>Atomic Number : 19	 <br>Atomic Mass : 39.0983</span></td>
+            <td width="40" class="elements color1" onclick="openModal(this)" >20<br>Ca
+            <span class="tooltiptext">Full Name : Calcium <br>Atomic Number : 20	 <br>Atomic Mass : 40.08</span></td>
+            <td colspan="1"></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >21<br>Sc
+            <span class="tooltiptext">Full Name : Scandium <br>Atomic Number : 21	 <br>Atomic Mass : 44.9559</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >22<br>Ti
+                <span class="tooltiptext">Full Name : Titanium <br>Atomic Number : 22	 <br>Atomic Mass : 47.90</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >23<br>V
+            <span class="tooltiptext">Full Name : Vanadium <br>Atomic Number : 23	 <br>Atomic Mass : 50.9415</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >24<br>Cr
+            <span class="tooltiptext">Full Name : Chromium <br>Atomic Number : 24	 <br>Atomic Mass : 51.996</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >25<br>Mn
+            <span class="tooltiptext">Full Name : Manganese <br>Atomic Number : 25	 <br>Atomic Mass : 54.9380</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >26<br>Fe
+            <span class="tooltiptext">Full Name : Iron <br>Atomic Number : 26	 <br>Atomic Mass : 55.847</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >27<br>Co
+            <span class="tooltiptext">Full Name : Cobalt <br>Atomic Number : 27	 <br>Atomic Mass : 58.9332</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >28<br>Ni
+            <span class="tooltiptext">Full Name : Nickel <br>Atomic Number : 28	 <br>Atomic Mass : 58.70</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >29<br>Cu
+            <span class="tooltiptext">Full Name : Copper <br>Atomic Number : 29	 <br>Atomic Mass : 63.546</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >30<br>Zn
+            <span class="tooltiptext">Full Name : Zinc <br>Atomic Number : 30	 <br>Atomic Mass : 65.38</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >31<br>Ga
+            <span class="tooltiptext">Full Name : Gallium <br>Atomic Number : 31	 <br>Atomic Mass : 69.72</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >32<br>Ge
+            <span class="tooltiptext">Full Name : Germanium <br>Atomic Number : 32	 <br>Atomic Mass : 72.59</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >33<br>As
+            <span class="tooltiptext">Full Name : Arsenic <br>Atomic Number : 33	 <br>Atomic Mass : 74.9216</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >34<br>Se
+            <span class="tooltiptext">Full Name : Selenium <br>Atomic Number : 34	 <br>Atomic Mass : 78.96</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >35<br>Br
+            <span class="tooltiptext">Full Name : Bromine <br>Atomic Number : 35	 <br>Atomic Mass : 79.904</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >36<br>Kr
+            <span class="tooltiptext">Full Name : Krypton <br>Atomic Number : 36	 <br>Atomic Mass : 83.80</span></td>
+        </tr>
+        <tr width="950">
+            <th width="40" >5</th>
+            <td width="40" class="elements color1" onclick="openModal(this)" >37<br>Rb
+            <span class="tooltiptext">Full Name : Rubidium <br>Atomic Number : 37	 <br>Atomic Mass : 85.4678</span></td>
+            <td width="40" class="elements color1" onclick="openModal(this)" >38<br>Sr
+            <span class="tooltiptext">Full Name : Strontium <br>Atomic Number : 38	 <br>Atomic Mass : 87.62</span></td>
+            <td colspan="1"></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >39<br>Y
+            <span class="tooltiptext">Full Name : Yttrium <br>Atomic Number : 39	 <br>Atomic Mass : 88.9059</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >40<br>Zr
+                <span class="tooltiptext">Full Name : Zirconium <br>Atomic Number : 40	 <br>Atomic Mass : 91.22</span><s/td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >41<br>Nb
+            <span class="tooltiptext">Full Name : Niobium <br>Atomic Number : 41	 <br>Atomic Mass : 92.9064</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >42<br>Mo
+            <span class="tooltiptext">Full Name : Molybdenum <br>Atomic Number : 42	 <br>Atomic Mass : 95.94</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >43<br>Tc
+            <span class="tooltiptext">Full Name : Technetium <br>Atomic Number : 43	 <br>Atomic Mass : 98</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >44<br>Ru
+            <span class="tooltiptext">Full Name : Ruthenium <br>Atomic Number : 44	 <br>Atomic Mass : 101.07</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >45<br>Rh
+            <span class="tooltiptext">Full Name : Rhodium <br>Atomic Number : 45	 <br>Atomic Mass : 102.9055</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >46<br>Pd
+            <span class="tooltiptext">Full Name : Palladium <br>Atomic Number : 46	 <br>Atomic Mass : 106.4</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >47<br>Ag
+            <span class="tooltiptext">Full Name : Silver <br>Atomic Number : 47	 <br>Atomic Mass : 107.868</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >48<br>Cd
+            <span class="tooltiptext">Full Name : Cadmium <br>Atomic Number : 48	 <br>Atomic Mass : 112.41</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >49<br>In
+            <span class="tooltiptext">Full Name : Indium <br>Atomic Number : 49	 <br>Atomic Mass : 114.82</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >50<br>Sn
+            <span class="tooltiptext">Full Name : Tin <br>Atomic Number : 50	 <br>Atomic Mass : 118.69</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >51<br>Sb
+            <span class="tooltiptext">Full Name : Antimony <br>Atomic Number : 51	 <br>Atomic Mass : 121.75</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >52<br>Te
+            <span class="tooltiptext">Full Name : Tellurium <br>Atomic Number : 52	 <br>Atomic Mass : 127.60</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >53<br>I
+            <span class="tooltiptext">Full Name : Iodine <br>Atomic Number : 53	 <br>Atomic Mass : 126.9045</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >54<br>Xe
+            <span class="tooltiptext">Full Name : Xenon	 <br>Atomic Number : 54	 <br>Atomic Mass : 131.30 </span></td>
+        </tr>
+        <tr width="950">
+            <th width="40" >6</th>
+            <td width="40" class="elements color1" onclick="openModal(this)" >55<br>Cs
+            <span class="tooltiptext">Full Name : Cesium <br>Atomic Number : 55	 <br>Atomic Mass : 132.9054</span></td>
+            <td width="40" class="elements color1" onclick="openModal(this)" >56<br>Ba
+            <span class="tooltiptext">Full Name : Barium <br>Atomic Number : 56	 <br>Atomic Mass : 137.33</span></td>
+            <td colspan="1">*</td>
+            <td width="40" class="elements color2 " onclick="openModal(this)" >71<br>Lu
+            <span class="tooltiptext">Full Name : Lutetium	 <br>Atomic Number : 71	 <br>Atomic Mass : 174.967</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >72<br>Hf
+                <span class="tooltiptext">Full Name : Hafnium <br>Atomic Number : 72	 <br>Atomic Mass : 178.49</span><s/td>
+            <td width="40" class="elements color2" onclick="openModal(this)" onclick="openModal(this)" >73<br>Ta
+            <span class="tooltiptext">Full Name : Tantalum <br>Atomic Number : 73	 <br>Atomic Mass : 180.9479</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" onclick="openModal(this)" >74<br>W
+            <span class="tooltiptext">Full Name : Tungsten <br>Atomic Number : 74	 <br>Atomic Mass : 183.85</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" onclick="openModal(this)" >75<br>Re
+            <span class="tooltiptext">Full Name : Rhenium <br>Atomic Number : 75	 <br>Atomic Mass : 186.207</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" onclick="openModal(this)" >76<br>Os
+            <span class="tooltiptext">Full Name : Osmium <br>Atomic Number : 76	 <br>Atomic Mass : 190.2</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" onclick="openModal(this)" >77<br>Ir
+            <span class="tooltiptext">Full Name : Iridium <br>Atomic Number : 77	 <br>Atomic Mass : 192.22</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" onclick="openModal(this)" >78<br>Pt
+            <span class="tooltiptext">Full Name : Platinum <br>Atomic Number : 78	 <br>Atomic Mass : 195.09</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" onclick="openModal(this)" >79<br>Au
+            <span class="tooltiptext">Full Name : Gold <br>Atomic Number : 79	 <br>Atomic Mass : 196.9665</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" onclick="openModal(this)" >80<br>Hg
+            <span class="tooltiptext">Full Name : Mercury <br>Atomic Number : 80	 <br>Atomic Mass : 200.59</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" onclick="openModal(this)" >81<br>Ti
+            <span class="tooltiptext">Full Name : Thallium <br>Atomic Number : 81	 <br>Atomic Mass : 204.37</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" onclick="openModal(this)" >82<br>Pb
+            <span class="tooltiptext">Full Name : Lead <br>Atomic Number : 82	 <br>Atomic Mass : 207.2</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" onclick="openModal(this)" >83<br>Bi
+            <span class="tooltiptext">Full Name : Bismuth <br>Atomic Number : 83	 <br>Atomic Mass : 208.9804</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" onclick="openModal(this)" >84<br>Po
+            <span class="tooltiptext">Full Name : Polonium <br>Atomic Number : 84	 <br>Atomic Mass : 209</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" onclick="openModal(this)" >85<br>At
+            <span class="tooltiptext">Full Name : Lithium <br>Atomic Number : 85	 <br>Atomic Mass : 210</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" onclick="openModal(this)" >86<br>Rn
+            <span class="tooltiptext">Full Name : Radon <br>Atomic Number : 86	 <br>Atomic Mass : 222</span></td>
+        </tr>
+        <tr width="950">
+            <th width="40" >7</th>
+            <td width="40" class="elements color1" onclick="openModal(this)" >87<br>Fr
+                <span class="tooltiptext">Full Name : Francium <br>Atomic Number : 87	 <br>Atomic Mass : 222</span></td>
+            <td width="40" class="elements color1" onclick="openModal(this)" >88<br>Ra
+                <span class="tooltiptext">Full Name : Radon <br>Atomic Number : 88	 <br>Atomic Mass : 222</span></td>
+            <td colspan="1">*<br>*</td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >103<br>Lr
+            <span class="tooltiptext">Full Name : Lawrencium <br>Atomic Number : 103	 <br>Atomic Mass : 222</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >104<br>Rf
+                <span class="tooltiptext">Full Name : Rutherfordium <br>Atomic Number : 104	 <br>Atomic Mass : 261</span><s/td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >105<br>Db
+            <span class="tooltiptext">Full Name : Dubnium <br>Atomic Number : 105	 <br>Atomic Mass : 262</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >106<br>Sg
+            <span class="tooltiptext">Full Name : Seaborgium <br>Atomic Number : 106	 <br>Atomic Mass : 263</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >107<br>Bh
+            <span class="tooltiptext">Full Name : Bohrium <br>Atomic Number : 107	 <br>Atomic Mass : 262</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >108<br>Hs
+            <span class="tooltiptext">Full Name : Hassium <br>Atomic Number : 108	 <br>Atomic Mass : 255</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >109<br>Mt
+            <span class="tooltiptext">Full Name : Meitnerium <br>Atomic Number : 109	 <br>Atomic Mass : 256</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >110<br>Ds
+            <span class="tooltiptext">Full Name : Darmstadtium <br>Atomic Number : 110	 <br>Atomic Mass : 269</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >111<br>Rg
+            <span class="tooltiptext">Full Name : Roentgenium <br>Atomic Number : 111	 <br>Atomic Mass : 272</span></td>
+            <td width="40" class="elements color2" onclick="openModal(this)" >112<br>Cn
+            <span class="tooltiptext">Full Name : Copernicium <br>Atomic Number : 112	 <br>Atomic Mass : 285</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >113<br>Nh
+            <span class="tooltiptext">Full Name : Nihonium <br>Atomic Number : 113	 <br>Atomic Mass : 286</span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >114<br>Fl
+            <span class="tooltiptext">Full Name : Flerovium <br>Atomic Number : 114	 <br>Atomic Mass : 289 </span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >115<br>Mc
+            <span class="tooltiptext">Full Name : Moscovium <br>Atomic Number : 115	 <br>Atomic Mass : 289 </span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >116<br>Lv
+            <span class="tooltiptext">Full Name : Livermorium <br>Atomic Number : 116	 <br>Atomic Mass : 293 </span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" >117<br>Ts
+            <span class="tooltiptext">Full Name : Tennessine <br>Atomic Number : 117	 <br>Atomic Mass : 294 </span></td>
+            <td width="40" class="elements color3" onclick="openModal(this)" onclick="openModal(this)">118<br>Og
+            <span class="tooltiptext">Full Name : Oganesson <br>Atomic Number : 118	 <br>Atomic Mass : 294 u</span></td>
+        </tr>
+        <tr rowspan="1"></tr>
+        <tr width="950">
+            <th width="40" colspan="3" ></th>
+            <td colspan="1">*</td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >57<br>La
+            <span class="tooltiptext">Full Name : Lanthanum <br>Atomic Number : 57	 <br>Atomic Mass : 138.9055</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >58<br>Ce
+            <span class="tooltiptext">Full Name : Cerium <br>Atomic Number : 58	 <br>Atomic Mass : 140.12</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >59<br>Pr
+            <span class="tooltiptext">Full Name : Praseodymium <br>Atomic Number : 59	 <br>Atomic Mass : 140.9077</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >60<br>Nd
+            <span class="tooltiptext">Full Name : Neodymium <br>Atomic Number : 60	 <br>Atomic Mass : 144.24</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >61<br>Pm
+            <span class="tooltiptext">Full Name : Promethium <br>Atomic Number : 61	 <br>Atomic Mass : 145</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >62<br>Sm
+            <span class="tooltiptext">Full Name : Samarium <br>Atomic Number : 62	 <br>Atomic Mass : 150.4</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >63<br>Eu
+            <span class="tooltiptext">Full Name : Europium <br>Atomic Number : 63	 <br>Atomic Mass : 151.96</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >64<br>Gd
+            <span class="tooltiptext">Full Name : Gadolinium <br>Atomic Number : 64	 <br>Atomic Mass : 157.25</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >65<br>Tb
+            <span class="tooltiptext">Full Name : Terbium <br>Atomic Number : 65	 <br>Atomic Mass : 158.9254</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >66<br>Dy
+            <span class="tooltiptext">Full Name : Dysprosium <br>Atomic Number : 66	 <br>Atomic Mass : 162.50</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >67<br>Ho
+            <span class="tooltiptext">Full Name : Holmium <br>Atomic Number : 67	 <br>Atomic Mass : 164.9304</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >68<br>Er
+            <span class="tooltiptext">Full Name : Erbium <br>Atomic Number : 68	 <br>Atomic Mass : 167.26</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >69<br>Tm
+            <span class="tooltiptext">Full Name : Thulium <br>Atomic Number : 69	 <br>Atomic Mass : 168.9342</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" onclick="openModal(this)" >70<br>Yb
+            <span class="tooltiptext">Full Name : Ytterbium <br>Atomic Number : 70	 <br>Atomic Mass : 173.04</span></td>
+            <th width="40" colspan="2" ></th>
+   
+        </tr>
+        <tr width="950">
+            <th width="40" colspan="3" ></th>
+            <td colspan="1">*<br>*</td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >89<br>Ac
+                 <span class="tooltiptext">Full Name : Actinium <br>Atomic Number : 89	 <br>Atomic Mass : 227.0278</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >90<br>Th
+                <span class="tooltiptext">Full Name : Thorium <br>Atomic Number : 90	 <br>Atomic Mass : 232.0381</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >91<br>Pa
+                <span class="tooltiptext">Full Name : Protactinium <br>Atomic Number : 91	 <br>Atomic Mass : 231.0359</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >92<br>U
+                <span class="tooltiptext">Full Name : Uranium <br>Atomic Number : 92	 <br>Atomic Mass : 238.029</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >93<br>Np
+                <span class="tooltiptext">Full Name : Neptunium <br>Atomic Number : 93	 <br>Atomic Mass : 237.0482</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >94<br>Pu
+                <span class="tooltiptext">Full Name : Plutonium <br>Atomic Number : 94	 <br>Atomic Mass : 242</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >95<br>Am
+                <span class="tooltiptext">Full Name : Americium <br>Atomic Number : 95	 <br>Atomic Mass : 243</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >96<br>Cm
+                <span class="tooltiptext">Full Name : Curium <br>Atomic Number : 96	 <br>Atomic Mass : 247</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >97<br>Bk
+                <span class="tooltiptext">Full Name : Berkelium <br>Atomic Number : 97	 <br>Atomic Mass : 247</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >98<br>Cf
+                <span class="tooltiptext">Full Name : Californium <br>Atomic Number : 98	 <br>Atomic Mass : 251</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >99<br>Es
+                <span class="tooltiptext">Full Name : Einsteinium <br>Atomic Number : 99	 <br>Atomic Mass : 252</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >100<br>Fm
+                <span class="tooltiptext">Full Name : Fermium <br>Atomic Number : 100	 <br>Atomic Mass : 257</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >101<br>Md
+                <span class="tooltiptext">Full Name : Mendelevium <br>Atomic Number : 101	 <br>Atomic Mass : 258</span></td>
+            <td width="40" class="elements color4" onclick="openModal(this)" >102<br>No
+                <span class="tooltiptext">Full Name : Nobelium <br>Atomic Number : 102	 <br>Atomic Mass : 222</span></td>
+            <th width="40" colspan="2" ></th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

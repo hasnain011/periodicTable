@@ -1,0 +1,180 @@
+/* tooltip */
+.elements {
+  position: relative;
+  
+  
+ 
+
+}
+.elements:hover{
+  transform: scale(1.2);
+  transition: transform .2s ease-in-out;
+  z-index: 10;
+  
+}
+
+.elements .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: transparent;
+  color: transparent;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 11px;
+  padding: 5px 0;
+  transition: 0.3s;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.elements:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+/* gggggggggggggggggggggggggggggggggggggggggggg */
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+padding: 0;
+margin: 0;
+/* border: 2px solid red; */
+height: 97vh;
+text-align: center;
+display: flex;
+justify-content: center;
+background-color: #35c754;
+box-sizing: content-box;
+border-width: 8px;
+border-style: solid;
+border-image: linear-gradient(to right, #FF9999, #99CCFF,#FDFF8C,#9BFF99 );;
+border-image-slice: 1;
+  
+
+}
+
+
+
+#head{
+  padding: 5px;
+  color: rgb(230, 71, 71);
+  font-size: 28px;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+table {
+    border-spacing: 5px;
+  }
+  th{
+    font-size: 20px;
+  }
+td{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    margin: 15px;
+}
+.elements{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.color1{
+  background-color: #FF9999;
+}
+.color2{
+  background-color: #99CCFF;
+}
+.color3{
+   background-color: #FDFF8C;
+}
+.color4{
+  background-color: #9BFF99;
+}
+
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 150px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+
+@keyframes fadein {
+  0%{ opacity: 0 }
+  100% { opacity: 1 }
+}
+@keyframes fadeout {
+  0%{ opacity: 1 }
+  100% { opacity: 0 }
+}
+
+
+.periodic{
+   color: #f1f185;
+}
+
+
+
+
+  
+  /* Modal Content */
+  .modal-content {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    height: 40%;
+  box-sizing: content-box;
+  border-width: 8px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #FF9999, #99CCFF,#FDFF8C,#9BFF99 );
+  border-image-slice: 1;
+  background-color: #f1f185; 
+
+  
+
+
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+
+
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
